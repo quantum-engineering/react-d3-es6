@@ -69,4 +69,5 @@ gulp.task('watch', function() {
   .pipe(gulp.dest('./build/javascripts'))
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['less', 'watch']);
+

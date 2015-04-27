@@ -6,18 +6,9 @@ class MainLayout extends React.Component {
   render() {
     return (
       <div>
-        <h1>lorem ipsum dolor sit amet jojojo hahaha ES6 FF {this.state.name}</h1>
-        <GenericButton buttonName='Generic Button bro' />
+        <h1>React D3 Experiment</h1>
         <CircGraph info={this.props.info} />
       </div>
-    )
-  }
-}
-
-class GenericButton extends React.Component {
-  render() {
-    return (
-      <button>{this.props.buttonName}</button>
     )
   }
 }

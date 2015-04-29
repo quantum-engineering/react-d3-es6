@@ -12,8 +12,8 @@ export class CircGraph extends React.Component {
   updateChart(e) {
     e.preventDefault()
     this.setState({
-      javascript: ['javascript', 88, 32, 29, Math.random() * 30],
-      golang: ['go', 33, 12, 10, 78, Math.random() * 30]
+      javascript: ['javascript', 88, 32, 29, Math.random() * 60],
+      golang: ['go', 33, 12, 10, 78, Math.random() * 60]
     })
     console.log(this.state.javascript)
     console.log(this.state.golang)
@@ -42,6 +42,8 @@ export class CircGraph extends React.Component {
         title: "Languages"
       }
     });
+  }
+  render() {
     setTimeout(function() {
       this.chart.load({
         columns: [
@@ -50,8 +52,6 @@ export class CircGraph extends React.Component {
         ]
       })
     }.bind(this))
-  }
-  render() {
     console.log('render')
     return (
       <div>

@@ -58,6 +58,9 @@ export class CircGraph extends React.Component {
         <div id='chart' className='c3'></div>
         <button onClick={this.updateChart.bind(this)}>Update!</button>
         <p>{this.state.name}</p>
+        <form>
+          <input type='text' />
+        </form>
       </div>
     )
   }

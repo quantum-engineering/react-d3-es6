@@ -23,9 +23,8 @@
 - run: `npm install`
 - run: `bower install`
 - run: `gulp`
+- run: 'http-server'
 
 ### Development Notes
 
 - We're using ES6 for this project, but you can write ol' ES5 stuff
-
-
